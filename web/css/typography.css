@@ -1,0 +1,74 @@
+h1, h2, h3, h4, h5 {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 38px;
+}
+h2.title {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 26px;
+  margin-bottom: 39px;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 33px;
+}
+
+p {
+  margin-bottom: 21px;
+}
+
+img {
+  display: block;
+}
+img.full-width {
+  width: 100%;
+  height: auto;
+  margin-bottom: 35px;
+}
+img.img-floatright {
+  float: right;
+  margin: 3px 0 21px 26px;
+}
+
+.h-desc {
+  font-size: 18px;
+  line-height: 22px;
+  position: relative;
+  display: block;
+  margin-bottom: 68px;
+}
+.h-desc:before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 90px;
+  height: 5px;
+  background: #fff;
+  left: 0;
+  bottom: -25px;
+}
+
+.h-title {
+  font-size: 46px;
+  line-height: 50px;
+  font-weight: normal;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+  margin-left: 0;
+}

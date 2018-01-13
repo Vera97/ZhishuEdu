@@ -1,0 +1,23 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+-------------------------------------------------------------------*/
+/* Fonts */
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:300,700,400&subset=latin,cyrillic-ext);
+@import url("../fonts/flaticon/flaticon.css");
+@import url("../fonts/elegant_font/style.css");
+/* PLUGIN CSS */
+/*@import url('../plugins/loader/css/loader.css');*/
+@import url("../plugins/owl-carousel/owl.carousel.css");
+@import url("../plugins/owl-carousel/owl.theme.css");
+@import url("../plugins/owl-carousel/owl.transitions.css");
+@import url("../plugins/ekko-lightbox/ekko-lightbox.min.css");
+/* MAIN CSS */
+@import url("bootstrap.min.css");
+@import url("jquery-ui.min.css");
+@import url("theme.css");
+@import url("typography.css");
+@import url("responsive.css");
+@import url("animate.css");
+@import url("hover-min.css");
+@import url("custom.css");
+@import url("color.css");
