@@ -65,6 +65,7 @@ body {
 
 .logo {
   background: url("../img/logo.png");
+  background-size: 134px 39px;
   display: block;
   width: 134px;
   height: 39px;
@@ -2448,7 +2449,7 @@ section .top-icon-block:after {
   text-align: center;
 }
 .home-slider .item .wrapper.s-content-center .b-s-text {
-  margin: 0 auto 50px;
+  margin: 0 auto 20px;
   line-height: 26px;
 }
 .home-slider .item .wrapper.s-content-center .input-box .button-border .text-btn {
@@ -2502,6 +2503,7 @@ section .top-icon-block:after {
   position: relative;
   display: block;
   padding-bottom: 36px;
+  /*color: black;*/
 }
 .home-slider h1.s-border:before {
   position: absolute;

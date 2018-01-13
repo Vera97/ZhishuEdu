@@ -8,7 +8,7 @@ $(document).ready(function(){
 
     /* home slider */
     $("#owl-home").owlCarousel({
-
+        autoPlay: true,
         navigation : true, // Show next and prev buttons
         slideSpeed : 300,
         paginationSpeed : 400,
