@@ -3,11 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Garden Master</title>
+		<title>智塾教育|我的</title>
 		<link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
-
 		<link href="css/master.css" rel="stylesheet">
-
 		<!-- SWITCHER -->
 		<link rel="stylesheet" id="switcher-css" type="text/css" href="plugins/switcher/css/switcher.css" media="all" />
 		<link rel="alternate stylesheet" type="text/css" href="plugins/switcher/css/color1.css" title="color1" media="all" />
@@ -49,7 +47,7 @@
 						<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
 							<div class="header-info">
 								<div class="description-header">
-									Welcome to Garden Master . Premium Garden Services
+									上海市静安区青年公益服务中心
 								</div>
 								<div class="color-primary">
 									+12 3456 7890
@@ -60,7 +58,30 @@
 							</div>
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-							<a href="." class="btn extra-color text-uppercase pull-right">Get Free Quote</a>
+						    <button type="button" class="btn extra-color text-uppercase pull-right" data-toggle="modal" data-target="#sign">
+								登录
+							</button>
+						</div>
+						<div class="modal fade" id="sign" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						    <div class="modal-dialog document">
+	                    	    <div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									    <h4 class="modal-title" id="myModalLabel">登录</h4>
+									</div>
+									<div class="modal-body">
+									    <form method="post">
+				                            <input type="text" name="email" placeholder="手机号" required="">
+				                            <input type="password" name="password" placeholder="密码" required="">
+									        <ul class="tick">
+									            <a href="#">忘记密码了？</a>
+									        </ul>
+			                                <input class="btn btn-border center" type="submit" value="登录">
+							            </form>
+               		                </div>
+								</div>
+							</div>
+						</div>
 						</div>
 					</div>
 				</div>
@@ -87,26 +108,11 @@
 							<span id="toggle-nav" class="ef icon_menu mobile-menu-toggle"></span>
 							<nav class="nav-container">
 								<ul>
-									<li class="search pull-right">
-										<form class="search-form form-inline" action="#" method="POST">
-											<div class="form-group">
-												<label class="sr-only" for="searchQuery">Search...</label>
-												<input type="search" class="search-field" id="searchQuery" placeholder="Search...">
-											</div>
-											<button type="submit" class="hidden"><span class="ef icon_search"></span></button>
-										</form>
-										<a class="iconSearch" href="#">
-											<span class="ef icon_search"></span>
-										</a>
-									</li>
-									<li><a class="#" href="index.html">Home</a></li>
-									<li><a class="#" href="about.html">About</a></li>
-									<li><a class="#" href="#">Services</a></li>
-									<li><a class="#" href="#">Our Works</a></li>
-									<li><a class="#" href="shop.html">Store</a></li>
-									<li><a class="#" href="blog.html">Blog</a></li>
-									<li><a class="#" href="contact.html">Contact</a></li>
-
+									<li><a class="#" href="index.html">首页</a></li>
+									<li><a class="#" href="about.html">推荐</a></li>
+									<li><a class="#" href="contact.html">标签</a></li>
+									<li><a class="#" href="blog.html">社区</a></li>
+									<li><a class="#" href="shop.html">我的</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -118,8 +124,8 @@
 				<section id="title-box" class="paralax bg-opacity-color shop">
 					<div class="wrapper">
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-							<h1>Store</h1>
-							<span class="subtitle">The Home Of best Products</span>
+							<h1>我的</h1>
+							<span class="subtitle">进步的点滴 都在这里</span>
 						</div>
 					</div>
 				</section>
@@ -129,13 +135,13 @@
 							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 								<ul>
 									<li>
-										<a href="#">Home</a>
+										<a href="#">首页</a>
 									</li>
 									<li>
-										<a href="#">Shop</a>
+										<a href="#">我的账户</a>
 									</li>
 									<li>
-										<span>Lawn Movers</span>
+										<span>我的课程</span>
 									</li>
 								</ul>
 							</div>
@@ -143,25 +149,24 @@
 					</div>
 				</section>
 				<section class="two-columns">
-					<div class="wrapper">
-						<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 pull-right">
-
+					<div class="wrapper tab-content">
+						<div id="favorite" class="col-lg-9 col-md-9 col-sm-12 col-xs-12 pull-right tab-pane fade">
 							<div class="settings-block wow bounceInDown center">
 								<div class="col-lg-10 col-md-10 col-sm-9 col-xs-12">
 									<div class="select-block">
-										<span class="select-title">Sort By:</span>
+										<span class="select-title">排序设置:</span>
 										<select name="#" id="sort-product">
-											<option value="Default Sorting">Default Sorting</option>
-											<option value="Default Sorting">Default Sorting</option>
-											<option value="Default Sorting">Default Sorting</option>
+											<option value="Default Sorting">默认排序</option>
+											<option value="Default Sorting">按价格排序</option>
+											<option value="Default Sorting">按人气排序</option>
 										</select>
 									</div>
 									<div class="select-block">
-										<span class="select-title">Show Items:</span>
+										<span class="select-title">显示设置:</span>
 										<select name="#" id="show-items">
-											<option value="Default Sorting">9 Per Page</option>
-											<option value="Default Sorting">12 Per Page</option>
-											<option value="Default Sorting">24 Per Page</option>
+											<option value="Default Sorting">每页9项</option>
+											<option value="Default Sorting">每页12项</option>
+											<option value="Default Sorting">每页24项</option>
 										</select>
 									</div>
 								</div>
@@ -187,18 +192,18 @@
 										<div class="product-box">
 											<div class="product-image">
 												<a href="shop-2.html">
-													<img src="media/store/product-1.jpg" alt="product">
+													<img src="media/store/course-1.jpg" alt="product">
 												</a>
 											</div>
 											<div class="product-desc-wrapper">
-												<div class="product-title"><span>Vax Pressure Washer</span></div>
-												<div class="product-desc">1800W Powerful Motor</div>
+												<div class="product-title"><span>课程名称10字以内</span></div>
+												<div class="product-desc">关键字1 关键字2</div>
 												<div class="row-pr">
 													<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
-														<button class="add-to-cart pull-right"><span>Add to Cart</span></button>
+														<button class="add-to-cart pull-right"><span>立即购买</span></button>
 													</div>
 													<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-														<div class="price">$59</div>
+														<div class="price">￥59</div>
 														<div class="rating pull-right">
 															<span class="ef icon_star"></span>
 															<span class="ef icon_star"></span>
@@ -216,15 +221,336 @@
 											<div class="sale-product"><span>sale</span></div>
 											<div class="product-image">
 												<a href="shop-2.html">
-													<img src="media/store/product-2.jpg" alt="product">
+													<img src="media/store/course-2.jpg" alt="product">
 												</a>
 											</div>
 											<div class="product-desc-wrapper">
-												<div class="product-title"><span>Electric Rotary Lawn Mower</span></div>
-												<div class="product-desc">Qualcast 1400W - 34cm</div>
+												<div class="product-title"><span>课程名称10字以内</span></div>
+												<div class="product-desc">关键字1 关键字2</div>
 												<div class="row-pr">
 													<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
-														<button class="add-to-cart pull-right"><span>Add to Cart</span></button>
+														<button class="add-to-cart pull-right"><span>立即购买</span></button>
+													</div>
+													<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+														<div class="price"><span class="before-price">￥285</span>￥165</div>
+														<div class="rating pull-right">
+															<span class="ef icon_star"></span>
+															<span class="ef icon_star"></span>
+															<span class="ef icon_star"></span>
+															<span class="ef icon_star"></span>
+															<span class="ef icon_star empty"></span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+										<div class="product-box">
+											<div class="product-image">
+												<a href="shop-2.html">
+													<img src="media/store/course-3.jpg" alt="product">
+												</a>
+											</div>
+											<div class="product-desc-wrapper">
+												<div class="product-title"><span>课程名称10字以内</span></div>
+												<div class="product-desc">关键字1 关键字2</div>
+												<div class="row-pr">
+													<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+														<button class="add-to-cart pull-right"><span>立即购买</span></button>
+													</div>
+													<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+														<div class="price">￥43</div>
+														<div class="rating pull-right">
+															<span class="ef icon_star"></span>
+															<span class="ef icon_star"></span>
+															<span class="ef icon_star"></span>
+															<span class="ef icon_star"></span>
+															<span class="ef icon_star empty"></span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="row wow fadeInUp">
+									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+										<div class="product-box">
+											<div class="product-image">
+												<a href="shop-2.html">
+													<img src="media/store/course-4.jpg" alt="product">
+												</a>
+											</div>
+											<div class="product-desc-wrapper">
+												<div class="product-title"><span>课程名称10字以内</span></div>
+												<div class="product-desc">关键字1 关键字2</div>
+												<div class="row-pr">
+													<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+														<button class="add-to-cart pull-right"><span>立即购买</span></button>
+													</div>
+													<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+														<div class="price">￥59</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+										<div class="product-box">
+											<div class="product-image">
+												<a href="shop-2.html">
+													<img src="media/store/course-5.jpg" alt="product">
+												</a>
+											</div>
+											<div class="product-desc-wrapper">
+												<div class="product-title"><span>课程名称10字以内</span></div>
+												<div class="product-desc">关键字1 关键字2</div>
+												<div class="row-pr">
+													<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+														<button class="add-to-cart pull-right"><span>立即购买</span></button>
+													</div>
+													<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+														<div class="price">￥59</div>
+														<div class="rating pull-right">
+															<span class="ef icon_star"></span>
+															<span class="ef icon_star"></span>
+															<span class="ef icon_star"></span>
+															<span class="ef icon_star"></span>
+															<span class="ef icon_star empty"></span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+										<div class="product-box">
+											<div class="product-image">
+												<a href="shop-2.html">
+													<img src="media/store/course-6.jpg" alt="product">
+												</a>
+											</div>
+											<div class="product-desc-wrapper">
+												<div class="product-title"><span>课程名称10字以内</span></div>
+												<div class="product-desc">关键字1 关键字2</div>
+												<div class="row-pr">
+													<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+														<button class="add-to-cart pull-right"><span>立即购买</span></button>
+													</div>
+													<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+														<div class="price">￥169</div>
+														<div class="rating pull-right">
+															<span class="ef icon_star"></span>
+															<span class="ef icon_star"></span>
+															<span class="ef icon_star"></span>
+															<span class="ef icon_star empty"></span>
+															<span class="ef icon_star empty"></span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="row wow fadeInUp">
+									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+										<div class="product-box">
+											<div class="product-image">
+												<a href="shop-2.html">
+													<img src="media/store/course-7.jpg" alt="product">
+												</a>
+											</div>
+											<div class="product-desc-wrapper">
+												<div class="product-title"><span>课程名称10字以内</span></div>
+												<div class="product-desc">关键字1 关键字2</div>
+												<div class="row-pr">
+													<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+														<button class="add-to-cart pull-right"><span>立即购买</span></button>
+													</div>
+													<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+														<div class="price">￥559</div>
+														<div class="rating pull-right">
+															<span class="ef icon_star"></span>
+															<span class="ef icon_star"></span>
+															<span class="ef icon_star"></span>
+															<span class="ef icon_star"></span>
+															<span class="ef icon_star empty"></span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+										<div class="product-box">
+											<div class="sale-product"><span>sale</span></div>
+											<div class="product-image">
+												<a href="shop-2.html">
+													<img src="media/store/course-8.jpg" alt="product">
+												</a>
+											</div>
+											<div class="product-desc-wrapper">
+												<div class="product-title"><span>课程名称10字以内</span></div>
+												<div class="product-desc">关键字1 关键字2</div>
+												<div class="row-pr">
+													<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+														<button class="add-to-cart pull-right"><span>立即购买</span></button>
+													</div>
+													<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+														<div class="price"><span class="before-price">￥135</span>￥105</div>
+														<div class="rating pull-right">
+															<span class="ef icon_star"></span>
+															<span class="ef icon_star"></span>
+															<span class="ef icon_star"></span>
+															<span class="ef icon_star"></span>
+															<span class="ef icon_star"></span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+										<div class="product-box">
+											<div class="product-image">
+												<a href="shop-2.html">
+													<img src="media/store/course-9.jpg" alt="product">
+												</a>
+											</div>
+											<div class="product-desc-wrapper">
+												<div class="product-title"><span>课程名称10字以内合适</span></div>
+												<div class="product-desc">关键字1 关键字2</div>
+												<div class="row-pr">
+													<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+														<button class="add-to-cart pull-right"><span>立即购买</span></button>
+													</div>
+													<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+														<div class="price">￥169</div>
+														<div class="rating pull-right">
+															<span class="ef icon_star"></span>
+															<span class="ef icon_star"></span>
+															<span class="ef icon_star"></span>
+															<span class="ef icon_star empty"></span>
+															<span class="ef icon_star empty"></span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="pagination-box">
+								<ul>
+									<!--<li class="arrow-pagin">
+									<a href="#">
+									<span class="ef arrow_left"></span>
+									</a>
+									</li>-->
+									<li class="active">
+										<span class="number-pag">1</span>
+									</li>
+									<li>
+										<a href="#">
+											<span class="number-pag">2</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="number-pag">3</span>
+										</a>
+									</li>
+									<li class="arrow-pagin">
+										<a href="#">
+											<span class="ef arrow_right"></span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div id="bought" class="col-lg-9 col-md-9 col-sm-12 col-xs-12 pull-right tab-pane fade in active">
+                            <div class="settings-block wow bounceInDown center">
+								<div class="col-lg-10 col-md-10 col-sm-9 col-xs-12">
+									<div class="select-block">
+										<span class="select-title">排序设置:</span>
+										<select name="#" id="sort-product">
+											<option value="Default Sorting">默认排序</option>
+											<option value="Default Sorting">按价格排序</option>
+											<option value="Default Sorting">按人气排序</option>
+										</select>
+									</div>
+									<div class="select-block">
+										<span class="select-title">显示设置:</span>
+										<select name="#" id="show-items">
+											<option value="Default Sorting">每页9项</option>
+											<option value="Default Sorting">每页12项</option>
+											<option value="Default Sorting">每页24项</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+									<ul id="type-of-display" class="pull-right">
+										<li>
+											<button class="toogle-view grid-3 active-view">
+												<span class="ef icon_grid-2x2"></span>
+											</button>
+										</li>
+										<li>
+											<button class="toogle-view grid-list">
+												<span class="ef icon_ul"></span>
+											</button>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="shop-grid">
+								<div class="row wow fadeInUp">
+									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+										<div class="product-box">
+											<div class="product-image">
+												<a href="shop-2.html">
+													<img src="media/store/course-1.jpg" alt="product">
+												</a>
+											</div>
+											<div class="product-desc-wrapper">
+												<div class="product-title"><span>课程名称10字以内</span></div>
+												<div class="product-desc">关键字1 关键字2</div>
+												<div class="row-pr">
+													<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+														<button class="add-to-cart pull-right"><span>立即评价</span></button>
+													</div>
+													<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+														<div class="price">$59</div>
+														<div class="rating pull-right">
+															<span class="ef icon_star"></span>
+															<span class="ef icon_star"></span>
+															<span class="ef icon_star"></span>
+															<span class="ef icon_star empty"></span>
+															<span class="ef icon_star empty"></span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+										<div class="product-box">
+											<div class="product-image">
+												<a href="shop-2.html">
+													<img src="media/store/course-2.jpg" alt="product">
+												</a>
+											</div>
+											<div class="product-desc-wrapper">
+												<div class="product-title"><span>课程名称10字以内</span></div>
+												<div class="product-desc">关键字1 关键字2</div>
+												<div class="row-pr">
+													<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+														<button class="add-to-cart pull-right"><span>立即评价</span></button>
 													</div>
 													<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
 														<div class="price">$165</div>
@@ -244,15 +570,15 @@
 										<div class="product-box">
 											<div class="product-image">
 												<a href="shop-2.html">
-													<img src="media/store/product-3.jpg" alt="product">
+													<img src="media/store/course-3.jpg" alt="product">
 												</a>
 											</div>
 											<div class="product-desc-wrapper">
-												<div class="product-title"><span>Cylinder Lawn Mower</span></div>
-												<div class="product-desc">Sovereign Push - 30cm</div>
+												<div class="product-title"><span>课程名称10字以内</span></div>
+												<div class="product-desc">关键字1 关键字2</div>
 												<div class="row-pr">
 													<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
-														<button class="add-to-cart pull-right"><span>Add to Cart</span></button>
+														<button class="add-to-cart pull-right"><span>立即评价</span></button>
 													</div>
 													<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
 														<div class="price">$43</div>
@@ -275,15 +601,15 @@
 										<div class="product-box">
 											<div class="product-image">
 												<a href="shop-2.html">
-													<img src="media/store/product-4.jpg" alt="product">
+													<img src="media/store/course-4.jpg" alt="product">
 												</a>
 											</div>
 											<div class="product-desc-wrapper">
-												<div class="product-title"><span>Home Pressure Washer</span></div>
-												<div class="product-desc">Karcher Compact - 1400W</div>
+												<div class="product-title"><span>课程名称10字以内</span></div>
+												<div class="product-desc">关键字1 关键字2</div>
 												<div class="row-pr">
 													<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
-														<button class="add-to-cart pull-right"><span>Add to Cart</span></button>
+														<button class="add-to-cart pull-right"><span>立即评价</span></button>
 													</div>
 													<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
 														<div class="price">$59</div>
@@ -296,15 +622,15 @@
 										<div class="product-box">
 											<div class="product-image">
 												<a href="shop-2.html">
-													<img src="media/store/product-5.jpg" alt="product">
+													<img src="media/store/course-5.jpg" alt="product">
 												</a>
 											</div>
 											<div class="product-desc-wrapper">
-												<div class="product-title"><span>Easimo Lawn Mower 900W</span></div>
-												<div class="product-desc">Flymo Electric 900W</div>
+												<div class="product-title"><span>课程名称10字以内</span></div>
+												<div class="product-desc">关键字1 关键字2</div>
 												<div class="row-pr">
 													<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
-														<button class="add-to-cart pull-right"><span>Add to Cart</span></button>
+														<button class="add-to-cart pull-right"><span>立即评价</span></button>
 													</div>
 													<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
 														<div class="price">$59</div>
@@ -324,103 +650,15 @@
 										<div class="product-box">
 											<div class="product-image">
 												<a href="shop-2.html">
-													<img src="media/store/product-6.jpg" alt="product">
+													<img src="media/store/course-6.jpg" alt="product">
 												</a>
 											</div>
 											<div class="product-desc-wrapper">
-												<div class="product-title"><span>Electric Hover Lawn Mower</span></div>
-												<div class="product-desc">Qualcast 1600W - 350W Trimmer Set </div>
+												<div class="product-title"><span>课程名称10字以内</span></div>
+												<div class="product-desc">关键字1 关键字2</div>
 												<div class="row-pr">
 													<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
-														<button class="add-to-cart pull-right"><span>Add to Cart</span></button>
-													</div>
-													<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-														<div class="price">$169</div>
-														<div class="rating pull-right">
-															<span class="ef icon_star"></span>
-															<span class="ef icon_star"></span>
-															<span class="ef icon_star"></span>
-															<span class="ef icon_star empty"></span>
-															<span class="ef icon_star empty"></span>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="row wow fadeInUp">
-									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-										<div class="product-box">
-											<div class="product-image">
-												<a href="shop-2.html">
-													<img src="media/store/product-7.jpg" alt="product">
-												</a>
-											</div>
-											<div class="product-desc-wrapper">
-												<div class="product-title"><span>Electric Knapsack Sprayer</span></div>
-												<div class="product-desc">The handy - 16L</div>
-												<div class="row-pr">
-													<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
-														<button class="add-to-cart pull-right"><span>Add to Cart</span></button>
-													</div>
-													<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-														<div class="price">$559</div>
-														<div class="rating pull-right">
-															<span class="ef icon_star"></span>
-															<span class="ef icon_star"></span>
-															<span class="ef icon_star"></span>
-															<span class="ef icon_star"></span>
-															<span class="ef icon_star empty"></span>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-										<div class="product-box">
-											<div class="sale-product"><span>sale</span></div>
-											<div class="product-image">
-												<a href="shop-2.html">
-													<img src="media/store/product-8.jpg" alt="product">
-												</a>
-											</div>
-											<div class="product-desc-wrapper">
-												<div class="product-title"><span>Cordless Grass Trimmer</span></div>
-												<div class="product-desc">Qualcast Li-ion - 18V</div>
-												<div class="row-pr">
-													<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
-														<button class="add-to-cart pull-right"><span>Add to Cart</span></button>
-													</div>
-													<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-														<div class="price"><span class="before-price">$135</span>$105</div>
-														<div class="rating pull-right">
-															<span class="ef icon_star"></span>
-															<span class="ef icon_star"></span>
-															<span class="ef icon_star"></span>
-															<span class="ef icon_star"></span>
-															<span class="ef icon_star"></span>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-										<div class="product-box">
-											<div class="product-image">
-												<a href="shop-2.html">
-													<img src="media/store/product-9.jpg" alt="product">
-												</a>
-											</div>
-											<div class="product-desc-wrapper">
-												<div class="product-title"><span>Hand Push Lawn Mower</span></div>
-												<div class="product-desc">Webb - Cylinder - H18</div>
-												<div class="row-pr">
-													<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
-														<button class="add-to-cart pull-right"><span>Add to Cart</span></button>
+														<button class="add-to-cart pull-right"><span>立即评价</span></button>
 													</div>
 													<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
 														<div class="price">$169</div>
@@ -466,91 +704,41 @@
 									</li>
 								</ul>
 							</div>
-
 						</div>
-
 						<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
 							<div class="left-block-wrapper wow fadeInUp">
 								<div class="title-left-block">
-									<h3 class="text-uppercase">products Categories</h3>
+									<h3 class="text-uppercase">个人中心</h3>
 								</div>
 								<div class="lb-content lb-content-accordion">
 									<div id="accordion" class="accordion-l-box">
+										
 										<h3>
 											<span class="fi flaticon-plants5"></span>
-											<span class="title-accordion-menu-item">Garden Mechinary</span>
+											<span class="title-accordion-menu-item">我的课程</span>
 											<span class="ef accordion-icon"></span>
 										</h3>
 										<div>
 											<ul>
-												<li class="active"><a href="#">Lawn Movers</a></li>
-												<li><a href="#">Hedge Cutters</a></li>
-												<li><a href="#">Cultivators</a></li>
-												<li><a href="#">Ride-On Movers</a></li>
-												<li><a href="#">Water Pumps</a></li>
+												<li><a data-toggle="tab" href="#bought">已购买</a></li>
+												<li><a data-toggle="tab" href="#favorite">已收藏</a></li>
 											</ul>
 										</div>
 										<h3>
 											<span class="fi flaticon-plants5"></span>
-											<span class="title-accordion-menu-item">Garden Tools</span>
+											<span class="title-accordion-menu-item">我的账户</span>
 											<span class="ef accordion-icon"></span>
 										</h3>
 										<div>
 											<ul>
-												<li class="active"><a href="#">Lawn Movers</a></li>
-												<li><a href="#">Hedge Cutters</a></li>
-												<li><a href="#">Cultivators</a></li>
-												<li><a href="#">Ride-On Movers</a></li>
-												<li><a href="#">Water Pumps</a></li>
-											</ul>
-										</div>
-										<h3>
-											<span class="fi flaticon-plants5"></span>
-											<span class="title-accordion-menu-item">Garden Tools</span>
-											<span class="ef accordion-icon"></span>
-										</h3>
-										<div>
-											<ul>
-												<li class="active"><a href="#">Lawn Movers</a></li>
-												<li><a href="#">Hedge Cutters</a></li>
-												<li><a href="#">Cultivators</a></li>
-												<li><a href="#">Ride-On Movers</a></li>
-												<li><a href="#">Water Pumps</a></li>
-											</ul>
-										</div>
-										<h3>
-											<span class="fi flaticon-plants5"></span>
-											<span class="title-accordion-menu-item">Fencing & Trellis</span>
-											<span class="ef accordion-icon"></span>
-										</h3>
-										<div>
-											<ul>
-												<li class="active"><a href="#">Lawn Movers</a></li>
-												<li><a href="#">Hedge Cutters</a></li>
-												<li><a href="#">Cultivators</a></li>
-												<li><a href="#">Ride-On Movers</a></li>
-												<li><a href="#">Water Pumps</a></li>
-											</ul>
-										</div>
-										<h3>
-											<span class="fi flaticon-plants5"></span>
-											<span class="title-accordion-menu-item">Pressure Washers</span>
-											<span class="ef accordion-icon"></span>
-										</h3>
-										<div>
-											<ul>
-												<li class="active"><a href="#">Lawn Movers</a></li>
-												<li><a href="#">Hedge Cutters</a></li>
-												<li><a href="#">Cultivators</a></li>
-												<li><a href="#">Ride-On Movers</a></li>
-												<li><a href="#">Water Pumps</a></li>
+												<li><a data-toggle="tab" href="#info">基本信息</a></li>
 											</ul>
 										</div>
 									</div>
 								</div>
 							</div>
 
-							<div class="left-block-wrapper wow fadeInUp">
+							<!--<div class="left-block-wrapper wow fadeInUp">
 								<div class="title-left-block">
 									<h3 class="text-uppercase">Recent Posts</h3>
 								</div>
@@ -579,7 +767,7 @@
 									</div>
 
 								</div>
-							</div>
+							</div>-->
 
 							<div class="left-block-wrapper wow fadeInUp">
 								<div class="l-banner-block hover-banner">
@@ -587,18 +775,18 @@
 										<img src="media/270x300/banner-1.jpg" alt="banner">
 										<span class="text-banner">
 											<span class="title-banner-box">
-												<h4>BEST Garden</h4>
-												<span>TOOLS</span>
+												<h4>精品课</h4>
+												<span>3D打印</span>
 											</span>
-											<span class="color-box-banner">50% OFF</span>
-											<span class="desc-banner">On Selected Models</span>
+											<span class="color-box-banner">5折</span>
+											<span class="desc-banner">畅销课程</span>
 										</span>
 									</a>
 								</div>
 							</div>
 							<div class="left-block-wrapper">
 								<div class="title-left-block">
-									<h3 class="text-uppercase">featured product</h3>
+									<h3 class="text-uppercase">猜你喜欢</h3>
 								</div>
 								<div class="lb-content featured-product">
 									<a href="#">
@@ -607,9 +795,9 @@
 										</span>
 										<span class="f-product-descr">
 											<span class="product-title">
-												<span>Easimo LawnMower</span>
+												<span>玩转乐高机器人</span>
 											</span>
-											<span class="product-desc">Flymo Electric 900W</span>
+											<span class="product-desc">每节课仅售9.9元</span>
 											<div class="rating">
 												<span class="ef icon_star"></span>
 												<span class="ef icon_star"></span>
