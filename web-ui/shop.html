@@ -59,7 +59,7 @@
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
 						    <button type="button" class="btn extra-color text-uppercase pull-right" data-toggle="modal" data-target="#sign">
-								登录
+								登录／注册
 							</button>
 						</div>
 						<div class="modal fade" id="sign" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -67,9 +67,11 @@
 	                    	    <div class="modal-content">
 									<div class="modal-header">
 										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-									    <h4 class="modal-title" id="myModalLabel">登录</h4>
+									    <a class="btn btn-border center active" data-toggle="tab" href="#sign-in">登录</a>
+										<a class="btn btn-border center" data-toggle="tab" href="#sign-up">注册</a>
 									</div>
-									<div class="modal-body">
+									<div class="modal-body tab-content">
+									    <div id="sign-in" class="tab-pane fade in active">
 									    <form method="post">
 				                            <input type="text" name="email" placeholder="手机号" required="">
 				                            <input type="password" name="password" placeholder="密码" required="">
@@ -78,6 +80,16 @@
 									        </ul>
 			                                <input class="btn btn-border center" type="submit" value="登录">
 							            </form>
+										</div>
+									    <div id="sign-up" class="tab-pane fade">
+									    <form method="post">
+				                            <input type="text" name="email" placeholder="手机号" required="">
+				                            <input type="password" name="password" placeholder="密码" required="">
+				                            <input type="password" name="password" placeholder="确认密码" required="">
+				                            <input type="text" name="email" placeholder="验证码" required="">
+			                                <input class="btn btn-border center" type="submit" value="注册">
+							            </form>
+										</div>
                		                </div>
 								</div>
 							</div>
@@ -90,20 +102,6 @@
 						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
 							<a href="." class="logo"></a>
 						</div>
-
-						<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 cart-block-r">
-							<div class="cart-block pull-right">
-								<i class="flaticon-shopping-bag1"></i>
-								<div class="cart-box">
-									<div class="cart-price pull-right">
-										<span class="color-primary text-uppercase">Cart:</span>
-										<span class="price">$0.00</span>
-										<div class="items-cart">0 ITEMS</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
 						<div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 nav-box">
 							<span id="toggle-nav" class="ef icon_menu mobile-menu-toggle"></span>
 							<nav class="nav-container">
@@ -185,7 +183,6 @@
 									</ul>
 								</div>
 							</div>
-
 							<div class="shop-grid">
 								<div class="row wow fadeInUp">
 									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -720,7 +717,7 @@
 										</h3>
 										<div>
 											<ul>
-												<li><a data-toggle="tab" href="#bought">已购买</a></li>
+												<li><a class="active" data-toggle="tab" href="#bought">已购买</a></li>
 												<li><a data-toggle="tab" href="#favorite">已收藏</a></li>
 											</ul>
 										</div>
@@ -737,37 +734,6 @@
 									</div>
 								</div>
 							</div>
-
-							<!--<div class="left-block-wrapper wow fadeInUp">
-								<div class="title-left-block">
-									<h3 class="text-uppercase">Recent Posts</h3>
-								</div>
-								<div class="lb-content">
-									<div id="slider-range"></div>
-									<div class="row">
-										<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
-											<a class="btn btn-border" href="#">
-												<span>Filter</span>
-											</a>
-										</div>
-										<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
-											<div class="price-block">
-												<div class="row2">
-													<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-														<label for="amount">Price:</label>
-													</div>
-													<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-														<input type="text" id="amount">
-													</div>
-												</div>
-
-
-											</div>
-										</div>
-									</div>
-
-								</div>
-							</div>-->
 
 							<div class="left-block-wrapper wow fadeInUp">
 								<div class="l-banner-block hover-banner">
@@ -815,8 +781,8 @@
 				<section class="full-width-box wow fadeInUp">
 					<div class="wrapper">
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-							<h1>Our Brands</h1>
-							<span class="subtitle">Nam lobortis fringilla felis. Fusce vol utpat mi at urna ras quam vitae</span>
+							<h1>我们的合作伙伴</h1>
+							<span class="subtitle">欢迎加盟智塾教育，关注孩子的创新教育，共同建设孩子的美好未来</span>
 						</div>
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 							<div id="owl-brends">
@@ -835,28 +801,28 @@
 							<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 wow fadeInLeft">
 								<div class="f-icon-box">
 									<span class="ef icon_archive_alt"></span>
-									<h4>Return & Exchange in 5 working days</h4>
-									<div class="s-f-text">Lorem ipsum dolor sit amet consectetur</div>
+									<h4>七天内可联系客服退换课程</h4>
+									<div class="s-f-text">我们将尽力提供让您满意，让孩子健康成长的环境</div>
 								</div>
 							</div>
 							<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 wow fadeInUp">
 								<div class="attractive">
-									Get Our Services & Get 25% Off <div class="attractive-text"><span class="att-text">Limited Time offer</span><span class="ef arrow_triangle-down"></span></div>
+									新用户注册首次购买课程五折优惠<div class="attractive-text"><span class="att-text">限时抢购</span><span class="ef arrow_triangle-down"></span></div>
 								</div>
 
 							</div>
 							<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 wow fadeInRight">
 								<div class="f-icon-box pull-right">
 									<span class="ef icon_wallet"></span>
-									<h4>FREE SHIPPING on orders over $149</h4>
-									<div class="s-f-text">Lorem ipsum dolor sit amet consectetur</div>
+									<h4>支持在线支付，线下支付等多种支付方式</h4>
+									<div class="s-f-text">可以到智塾教育实体机构体验课程</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</section>
 			</div>
-			<footer id="footer">
+			<!--<footer id="footer">
 				<div class="footer-blocks">
 					<div class="wrapper">
 						<div class="row-footer">
@@ -879,7 +845,6 @@
 														<div class="response" id="mce-error-response" style="display:none"></div>
 														<div class="response" id="mce-success-response" style="display:none"></div>
 													</div>
-													<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 													<div style="position: absolute; left: -5000px;">
 														<input type="text" name="b_fe9a9cfcf8d73763bcc53f206_319cafcc43" tabindex="-1" value="#">
 													</div>
@@ -1027,8 +992,38 @@
 							</div>
 						</div>
 					</div>
+				</div>-->
+				<section class="content-foooter-2 no-line">
+				<div class="wrapper">
+					<div class="row-1">
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow rollIn">
+							<div class="footer-2-title-box">
+								<div class="fot-2-title"></div>
+								<div class="fot-2-title"></div>
+							</div>
+							<div class="soc-box">
+								<ul class="social-circle">
+									<!--<li><a href="#"><span class="ef social_facebook_circle"></span></a></li>-->
+									<!--<li><a href="#"><span class="ef social_twitter_circle"></span></a></li>-->
+									<!--<li><a href="#"><span class="ef social_pinterest_circle"></span></a></li>-->
+									<!--<li><a href="#"><span class="ef social_youtube_circle"></span></a></li>-->
+									<!--<li><a href="#"><span class="ef social_instagram_circle"></span></a></li>-->
+									<!--<li><a href="#"><span class="ef social_googleplus_circle"></span></a></li>-->
+								</ul>
+								<!--<div class="followers">5k Followers</div>-->
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow lightSpeedIn">
+							<div class="attractive-box">
+								<div class="attractive">
+									欢迎加入智塾大家庭！！！<div class="attractive-text left"><span class="att-text">期待您与您的孩子到来！</span><span class="ef arrow_triangle-down"></span></div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="footer-bottom">
+			</section>
+				<!--<div class="footer-bottom">
 					<div class="wrapper">
 						<div class="row-footer">
 							<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 wow fadeInLeft">
@@ -1063,7 +1058,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div>-->
 			</footer>    
 		</div>
 
