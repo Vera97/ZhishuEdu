@@ -63,7 +63,41 @@
 							</div>
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-							<a href="." class="btn extra-color text-uppercase pull-right">登录／注册</a>
+						    <button type="button" class="btn extra-color text-uppercase pull-right" data-toggle="modal" data-target="#sign">
+								登录／注册
+							</button>
+						</div>
+						<div class="modal fade" id="sign" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						    <div class="modal-dialog document">
+	                    	    <div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									    <a class="btn btn-border center active" data-toggle="tab" href="#sign-in">登录</a>
+										<a class="btn btn-border center" data-toggle="tab" href="#sign-up">注册</a>
+									</div>
+									<div class="modal-body tab-content">
+									    <div id="sign-in" class="tab-pane fade in active">
+									    <form method="post">
+				                            <input type="text" name="email" placeholder="手机号" required="">
+				                            <input type="password" name="password" placeholder="密码" required="">
+									        <ul class="tick">
+									            <a href="#">忘记密码了？</a>
+									        </ul>
+			                                <input class="btn btn-border center" type="submit" value="登录">
+							            </form>
+										</div>
+									    <div id="sign-up" class="tab-pane fade">
+									    <form method="post">
+				                            <input type="text" name="email" placeholder="手机号" required="">
+				                            <input type="password" name="password" placeholder="密码" required="">
+				                            <input type="password" name="password" placeholder="确认密码" required="">
+				                            <input type="text" name="email" placeholder="验证码" required="">
+			                                <input class="btn btn-border center" type="submit" value="注册">
+							            </form>
+										</div>
+               		                </div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
