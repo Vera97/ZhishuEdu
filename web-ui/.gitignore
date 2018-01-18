@@ -8,5 +8,5 @@
 out
 gen
 .DS_Store
-.idea/
+.idea/*
 */.DS_Store
