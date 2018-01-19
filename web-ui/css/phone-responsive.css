@@ -1,0 +1,35 @@
+/* index web*/
+@media (min-width: 767px) {
+    footer.aui-bar-tab{
+        display: none;
+    }
+
+}
+
+/* index phone*/
+@media (max-width: 767px) {
+    .nav-box .mobile-menu-toggle {
+        display: none;
+    }
+
+    footer.aui-bar-tab{
+        display: block;
+    }
+
+    div.phone-hide{
+        display: none;
+    }
+
+    header.phone-hide{
+        display: none;
+    }
+
+    section.phone-hide{
+        display: none;
+    }
+
+    section.dash-top-line{
+        margin-top: 10px;
+    }
+
+}

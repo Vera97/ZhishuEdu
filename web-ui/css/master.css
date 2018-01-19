@@ -14,9 +14,11 @@
 /* MAIN CSS */
 @import url("bootstrap.min.css");
 @import url("jquery-ui.min.css");
+@import url("aui.css");
 @import url("theme.css");
 @import url("typography.css");
 @import url("responsive.css");
+@import url("phone-responsive.css");
 @import url("animate.css");
 @import url("hover-min.css");
 @import url("custom.css");
