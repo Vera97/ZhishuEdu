@@ -1,0 +1,72 @@
+.select {
+	width: 100%;
+	margin:0 auto;
+	padding-bottom:24px;
+	font-size: 14px
+}
+.select li {
+	list-style: none;
+	padding-left:100px;
+	padding-top:20px;
+}
+.select .select-list {
+	border-bottom: #eee 1px dashed
+}
+.select dl {
+	zoom: 1;
+	position: relative;
+	line-height: 20px;
+}
+.select dl:after {
+	content: " ";
+	display: block;
+	clear: both;
+	height: 0;
+	overflow: hidden
+}
+.select dt {
+	width: 100px;
+	margin-bottom: 5px;
+	position: absolute;
+	top: 0;
+	left: -100px;
+	text-align: right;
+	color: #fff;
+	height: 20px;
+	line-height: 20px
+}
+.select dd {
+	float: left;
+	display: inline;
+	margin: 0 0 5px 5px;
+}
+.select a {
+	display: inline-block;
+	white-space: nowrap;
+	height: 20px;
+	padding: 0 10px;
+	text-decoration: none;
+	color: #fff;
+	border-radius: 2px;
+}
+.select a:hover {
+	color: #f60;
+	background-color: #f3edc2
+}
+.select .selected a {
+	color: #fff;
+	background-color: #f60
+}
+.select-result dt {
+	font-weight: bold
+}
+.select-no {
+	color: #999
+}
+.select .select-result a {
+	padding-right: 20px;
+	background: #f60 url("close.gif") right 9px no-repeat
+}
+.select .select-result a:hover {
+	background-position: right -15px
+}
