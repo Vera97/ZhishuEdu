@@ -258,7 +258,7 @@
 
 .videoGallery .rsTmb {
 
-	padding: 20px;
+	/*padding: 20px;*/
 
 }
 
@@ -282,7 +282,7 @@
 
 .videoGallery .rsThumb:hover {
 
-	background: #000;
+	background: #f0f0f1;
 
 }
 

@@ -24,7 +24,7 @@
 .rsDefault .rsSlide,
 .rsDefault .rsVideoFrameHolder,
 .rsDefault .rsThumbs {
-	background: #151515;
+	background: #fff;
 	color: #FFF;
 }
 
@@ -143,7 +143,7 @@
 }
 .rsDefault .rsThumbsVer {
 	width: 96px;
-	height: 100%;
+	height: 125%;
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -163,15 +163,17 @@
 	height: 72px;
 }
 .rsDefault .rsThumb img {
-	width: 100%;
-	height: 100%;
+	height: 80px;
+	/*width: 100%;*/
+	/*height: 100%;*/
 }
 .rsDefault .rsThumb.rsNavSelected {
-	background: #02874a;
+	/*background: #dddddd;*/
+	background: #d9f7c4;
 }
 .rsDefault .rsThumb.rsNavSelected img {
-	opacity: 0.3;
-	filter: alpha(opacity=30);
+	/*opacity: 0.3;*/
+	/*filter: alpha(opacity=30);*/
 }
 .rsDefault .rsTmb {
 	display: block;
@@ -183,7 +185,7 @@
 	margin: 0;
 	padding: 0;
 	line-height: 20px;
-	color: #FFF;
+	color: #000;
 }
 .rsDefault .rsTmb span {
 	color: #DDD;
@@ -211,7 +213,7 @@
 }
 .rsDefault.rsWithThumbsVer .rsThumbsArrow {
 	width: 100%;
-	height: 20px;
+	height: 30px;
 }
 .rsDefault.rsWithThumbsVer .rsThumbsArrowLeft { top: 0; left: 0; }
 .rsDefault.rsWithThumbsVer .rsThumbsArrowRight { bottom: 0;  left: 0; }
@@ -228,7 +230,7 @@
 	margin-left: -8px;
 	position: absolute;	
 	cursor: pointer;	
-	background: url('rs-default.png');
+	background: url('../../img/icon/rs-default.png');
 }
 
 .rsDefault.rsWithThumbsHor .rsThumbsArrowLeft .rsThumbsArrowIcn { background-position: -128px -32px; }

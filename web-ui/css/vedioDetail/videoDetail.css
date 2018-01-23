@@ -8,40 +8,37 @@
 
 
 .videoGallery .rsTmb {
-
-    padding: 20px;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    color: black;
+    /*padding: 20px;*/
 
 }
 
 .videoGallery .rsThumbs .rsThumb {
 
     width: 220px;
-
     height: 80px;
-
-    border-bottom: 1px solid #2E2E2E;
+    border: 1px solid #a19f9d;
+    margin: 10px 5px 5px 40px;
 
 }
 
 .videoGallery .rsThumbs {
-
-    width: 220px;
-
+    width: 300px;
     padding: 0;
 
 }
 
 .videoGallery .rsThumb:hover {
 
-    background: #000;
+    /*background: #01874a;*/
 
 }
 
 .videoGallery .rsThumb.rsNavSelected {
-
-    background-color: #02874A;
-
-    border-bottom:-color #02874A;
+    background-color: #F4B142;
+    /*background-color: #fff;*/
 
 }
 
@@ -117,3 +114,103 @@
 
 }
 
+.top_tap{
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    height: 50px;
+    line-height: 50px;
+    background-color: #42413f;
+    color: white;
+}
+.cont-scroll{
+    position: relative;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    width: 300px;
+}
+.videoName{
+    -webkit-box-flex: 1;
+    margin-left: 20px;
+}
+.cont-scroll li{
+    cursor: -webkit-grab;
+    -webkit-box-flex: 1;
+    list-style: none;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+}
+.left_tap{
+    /*display: none;*/
+    /*width: 300px;*/
+}
+.cont-scroll li span{
+    font-size: 20px;
+}
+.cont-scroll .border{
+    display: block;
+    top: 45px;
+    float: right;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #F4B142;
+    width: auto;
+    height: 5px;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.rsContent iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.rsThumbsVer{
+    /*display: none;*/
+}
+/*.rsThumbsContainer{*/
+    /*display: none;*/
+/*}*/
+.icon img{
+    height: 30px;
+    width: 30px;
+    margin: 0 5px;
+}
+.line{
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    margin-left: 20px;
+    margin-right: 350px;
+}
+.icon_look img{
+    height: 30px;
+    width: 30px;
+}
+.movieName{
+    font-size: 20px;
+}
+.blank{
+    -webkit-box-flex: 1;
+}
+.addShopCart{
+    padding: 5px 20px;
+    border: 2px solid #f7a01c;
+    color: #f7a01c;
+}
+.bottom{
+    padding: 10px;
+    background-color: #f0f0f1;
+}
+
+.class_name{
+    font-size: large;
+    margin: 10px;
+}
+.movie_tag{
+    color: gray;
+    margin: 10px;
+}
+
+.icon_look{
+    margin: 0 10px;
+}

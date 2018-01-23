@@ -58,9 +58,10 @@ nav a {
 }
 
 .wrapper {
-  width: 90%;
-  max-width: 1100px;
-  margin: 0 auto;
+    /*width: 90%;*/
+    /*max-width: 1300px;*/
+  /*margin: 0 auto;*/
+    /*padding-top: 50px;*/
 }
 
 body {
@@ -74,14 +75,14 @@ body {
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
     box-sizing:border-box;
-    -moz-background-clip:padding-box !important;
+    -moz-background-clip: padding-box !important;
     -webkit-background-clip:padding-box !important;
     background-clip:padding-box !important;
 }
 .col,
 .main-features li {
-    margin-left:1%;
-    padding:0 1%;
+    /*margin-left:1%;*/
+    /*padding:0 1%;*/
 }
 
 .row .col:first-child,
@@ -89,7 +90,7 @@ body {
     margin-left:0;
 }
 .page .row {
-    margin-bottom: 24px;
+    /*margin-bottom: 24px;*/
 }
 
 
