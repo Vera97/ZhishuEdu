@@ -12,9 +12,9 @@
 @import url("../plugins/owl-carousel/owl.transitions.css");
 @import url("../plugins/ekko-lightbox/ekko-lightbox.min.css");
 /* MAIN CSS */
+@import url("aui.css");
 @import url("bootstrap.min.css");
 @import url("jquery-ui.min.css");
-@import url("aui.css");
 @import url("theme.css");
 @import url("typography.css");
 @import url("responsive.css");
