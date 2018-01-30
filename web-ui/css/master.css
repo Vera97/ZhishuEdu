@@ -2,7 +2,7 @@
 [Master Stylesheet]
 -------------------------------------------------------------------*/
 /* Fonts */
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:300,700,400&subset=latin,cyrillic-ext);
+/*@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:300,700,400&subset=latin,cyrillic-ext);*/
 @import url("../fonts/flaticon/flaticon.css");
 @import url("../fonts/elegant_font/style.css");
 /* PLUGIN CSS */
