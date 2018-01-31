@@ -869,14 +869,14 @@
             <i class="glyphicon glyphicon-tags"></i>
             <div class="aui-bar-tab-label">标签</div>
         </div>
-        <div class="aui-bar-tab-item" tapmode>
+        <div class="aui-bar-tab-item" tapmode id="tabCommunity">
             <div class="aui-badge">54</div>
             <i class="aui-iconfont aui-icon-cart"></i>
             <div class="aui-bar-tab-label">社区</div>
         </div>
-        <div class="aui-bar-tab-item" tapmode>
+        <div class="aui-bar-tab-item" tapmode id="tabMine">
             <div class="aui-dot"></div>
-            <i class="glyphicon glyphicon-user" id="tabMine"></i>
+            <i class="glyphicon glyphicon-user"></i>
             <div class="aui-bar-tab-label">我的</div>
         </div>
     </footer>
@@ -903,39 +903,7 @@
 <script src="js/waypoints.min.js"></script>
 <script src="js/jquery.easypiechart.min.js"></script>
 <script src="js/func.js"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        if(!isPC()){
-            $("#owl-home").hide();
-        }
-
-        $("#tabHome").on('click',function () {
-            $(".aui-bar-tab-item.aui-active").removeClass("aui-active");
-            $(this).addClass("aui-active");
-            window.location.href = "index.html";
-        })
-
-        $("#tabRecommend").on('click',function () {
-            $(".aui-bar-tab-item.aui-active").removeClass("aui-active");
-            $(this).addClass("aui-active");
-            window.location.href = "recommend.html";
-        })
-    });
-
-    function isPC() {
-        var userAgentInfo = navigator.userAgent;
-        var Agents = ["Android", "iPhone",
-            "SymbianOS", "Windows Phone"];
-        var flag = true;
-        for (var v = 0; v < Agents.length; v++) {
-            if (userAgentInfo.indexOf(Agents[v]) > 0) {
-                flag = false;
-                break;
-            }
-        }
-        return flag;
-    }
-</script>
+<script src="js/bottomTab.js"></script>
 </body>
 </html>
 
